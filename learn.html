@@ -94,6 +94,32 @@
     color: #f1c40f; /* Bright color for the step number */
     font-size: 1.1em; /* Slightly larger font size for emphasis */
 }
+        .subscription-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.subscription-option {
+    background-image: linear-gradient(to right, #000, #a87f32); /* Black to gold gradient */
+    color: #fff; /* White text */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    width: 45%; /* Adjust width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+}
+
+.subscription-option:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Larger shadow on hover */
+}
+
+.subscription-option h3 {
+    font-size: 1.5em; /* Larger font size for price */
+    margin-bottom: 15px; /* Space between price and description */
+}
+
 
 
 
@@ -133,11 +159,18 @@
 </section>
 
         <section class="section">
-            <h2>Subscription Options</h2>
-            <p>
-                <!-- Provide details about subscription options here -->
-            </p>
-        </section>
+    <h2>Subscription Options</h2>
+    <div class="subscription-container">
+        <div class="subscription-option">
+            <h3>$19.99</h3>
+            <p>Receive supplies every 15 days. Each case lasts 2 months.</p>
+        </div>
+        <div class="subscription-option">
+            <h3>$24.99</h3>
+            <p>Get access to a game master 3 times a month for hints and progress assistance.</p>
+        </div>
+    </div>
+</section>
 
         <!-- You can continue adding more sections here -->
 
