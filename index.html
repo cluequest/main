@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000; /* Changed background to black */
+            background-color: #000; /* Black background */
         }
 
         header {
@@ -19,29 +19,25 @@
             background: #3a2a4d; /* Dark bluish-purple background */
             color: #fff;
             padding: 20px;
-            position: relative; /* Make sure header is relative if children are absolute */
+            position: relative;
         }
 
         header img {
             position: absolute;
             right: 10px;
-            height: 50px; /* Adjust as needed */
-        }
-
-        header h1 {
-            z-index: 1;
+            height: 50px;
         }
 
         .hero {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding-top: 50px; /* Add space on top */
-            background-color: #000; /* Ensures consistency of the background */
+            padding-top: 50px;
+            background-color: #000;
         }
 
         .hero img {
-            width: 75%; /* Adjust the image size to be 75% of its original size */
+            width: 75%;
             height: auto;
         }
 
@@ -58,9 +54,46 @@
             margin: 20px auto;
         }
 
-        /* Remaining CSS */
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            padding: 15px 30px; /* Larger button size */
+            font-size: 1.2em; /* Larger font size for better readability */
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
 
-        /* ... */
+        .button:hover {
+            transform: scale(1.05);
+        }
+
+        .button-dark-red {
+            background-color: #7B113A;
+            border: 2px solid #fff;
+        }
+
+        .button-dark-red:hover {
+            background-color: #a51444;
+        }
+
+        .button-translucent-white {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 2px solid #7B113A;
+        }
+
+        .button-translucent-white:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .buttons-container {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #000; /* Black background for button section */
+        }
     </style>
 </head>
 <body>
@@ -70,12 +103,16 @@
     </header>
 
     <div class="hero">
-        <!-- Display the logo largely on the main page, resized to 75% of its original size -->
         <img src="Logo.png" alt="The ClueQuest Logo" id="largeLogo">
     </div>
 
-    <!-- Remaining HTML -->
+    <!-- Rest of the page content ... -->
+    
+    <!-- Add the new button section here -->
+    <div class="buttons-container">
+        <a href="#" class="button button-dark-red">Join Now!</a>
+        <a href="#" class="button button-translucent-white">Learn More</a>
+    </div>
 
-    <!-- ... -->
 </body>
 </html>
