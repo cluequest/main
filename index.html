@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The ClueQuest - Unravel Mysteries from the Comfort of Your Home</title>
     <style>
-        /* Add your custom styles here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,23 +12,37 @@
             background-color: #f5f5f5;
         }
 
-        .header-container {
+        header {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            background: #333;
+            background: #3a2a4d; /* Dark bluish-purple background */
             color: #fff;
-            padding: 10px 5%;
+            padding: 20px;
             border-bottom: #0779e4 3px solid;
         }
 
-        .header-container h1 {
-            margin: 0;
-            font-size: 2em;
+        header img {
+            position: absolute;
+            right: 10px;
+            height: 50px; /* Adjust as needed */
         }
 
-        .header-container img {
-            height: 50px; /* You can adjust the size as needed */
+        header h1 {
+            z-index: 1;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px; /* Adjust as needed */
+            background-color: #f5f5f5;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto; /* Adjust as needed */
         }
 
         .cta {
@@ -46,15 +59,20 @@
         }
 
         /* Remaining CSS */
-        
+
         /* ... */
     </style>
 </head>
 <body>
-    <header class="header-container">
+    <header>
         <h1>The ClueQuest</h1>
-        <img src="Logo.webp" alt="The ClueQuest Logo"> <!-- Update your image path as needed -->
+        <img src="Logo.webp" alt="The ClueQuest Logo">
     </header>
+
+    <div class="hero">
+        <!-- Display the logo largely on the main page -->
+        <img src="Logo.webp" alt="The ClueQuest Logo" id="largeLogo">
+    </div>
 
     <!-- Remaining HTML -->
 
