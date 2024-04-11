@@ -1,15 +1,35 @@
-.body {
+body {
     background-color: #1a1a1a; /* Dark background */
     font-family: Arial, sans-serif;
     color: #fff; /* White text color */
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3a2a4d; /* Dark bluish-purple background */
+    color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
 .logo {
     position: absolute;
-    top: 20px;
     right: 20px;
-    height: 80px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
 }
+
+/* Add padding to the top of the container to avoid overlap with the header */
+.container {
+    padding-top: 100px; /* Adjust as needed */
+    /* Other styles... */
+}
+
 
 
 .container {
