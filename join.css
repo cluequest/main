@@ -1,7 +1,7 @@
 body {
-    background-image: url('background.jpg'); /* Add the path to your background image */
-    background-size: cover;
+    background-color: #1a1a1a; /* Dark background */
     font-family: Arial, sans-serif;
+    color: #fff; /* White text color */
 }
 
 .container {
@@ -11,7 +11,6 @@ body {
     width: 90%;
     max-width: 600px; /* Adjust as needed */
     margin: auto;
-    color: #fff;
 }
 
 label {
@@ -27,6 +26,8 @@ select {
     margin-bottom: 15px;
     border: none;
     border-radius: 5px;
+    background-color: #f0e5d6; /* Light gold background for input fields */
+    color: #000; /* Black text color */
     transition: transform 0.3s;
 }
 
@@ -45,7 +46,7 @@ select:hover {
 }
 
 button {
-    background-image: linear-gradient(to right, #000, #a87f32);
+    background-image: linear-gradient(to right, #000, #a87f32); /* Black to gold gradient */
     color: #fff;
     padding: 15px 30px;
     border: none;
