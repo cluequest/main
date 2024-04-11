@@ -34,15 +34,16 @@ header h1 {
 
 .container {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    padding: 20px;
+    padding: 20px; /* Equal padding on all sides */
     border-radius: 10px;
-    width: 100%;
-    max-width: 600px; /* Adjust as needed */
+    width: calc(90% - 40px); /* Adjust width to account for padding */
+    max-width: calc(600px - 40px); /* Adjust max-width to account for padding */
     margin: auto;
     margin-left: 50%; /* Shift the form to the right */
     transform: translateX(-50%); /* Center the form within the right half */
     padding-top: 100px; /* Adjust as needed to avoid overlap with the header */
 }
+
 
 
 label {
