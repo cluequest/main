@@ -4,6 +4,14 @@ body {
     color: #fff; /* White text color */
 }
 
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 80px; /* Adjust as needed */
+}
+
+
 .container {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     padding: 20px;
