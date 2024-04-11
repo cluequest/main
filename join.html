@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join The ClueQuest</title>
+    <link rel="stylesheet" href="join.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <form action="next.html" method="post">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="middleInitial">Middle Initial</label>
+            <input type="text" id="middleInitial" name="middleInitial">
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="streetNumber">Street Number</label>
+            <input type="text" id="streetNumber" name="streetNumber" required>
+
+            <label for="aptNumber">Apt Number</label>
+            <input type="text" id="aptNumber" name="aptNumber">
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State </label>
+            <select id="state" name="state" required>
+                <!-- Add options for all US states here -->
+            </select>
+
+            <label for="zipCode">Zip Code</label>
+            <input type="text" id="zipCode" name="zipCode" required>
+
+            <div class="subscription-type">
+                <p>Subscription Type:</p>
+                <input type="radio" id="standard" name="subscriptionType" value="standard" required>
+                <label for="standard">$19.99 - All games and supplies delivered to your door</label><br>
+                <input type="radio" id="premium" name="subscriptionType" value="premium">
+                <label for="premium">$24.99 - Same as above but with a dedicated gamemaster for hints</label>
+            </div>
+
+            <button type="submit">NEXT</button>
+        </form>
+    </div>
+</body>
+</html>
