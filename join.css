@@ -39,7 +39,11 @@ header h1 {
     width: 90%;
     max-width: 600px; /* Adjust as needed */
     margin: auto;
+    margin-left: 50%; /* Shift the form to the right */
+    transform: translateX(-50%); /* Center the form within the right half */
+    padding-top: 100px; /* Adjust as needed to avoid overlap with the header */
 }
+
 
 label {
     display: block;
