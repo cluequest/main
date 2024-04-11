@@ -36,7 +36,7 @@ header h1 {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     padding: 20px;
     border-radius: 10px;
-    width: 90%;
+    width: 100%;
     max-width: 600px; /* Adjust as needed */
     margin: auto;
     margin-left: 50%; /* Shift the form to the right */
